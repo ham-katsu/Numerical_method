@@ -15,19 +15,19 @@
 
 ```c
 double *d1vector(int n);
-//n次元のベクトルの領域を確保します。添字は１からです。（返り値は配列のアドレス−１が返ります。）
+// n次元のベクトルの領域を確保します。添字は１からです。（返り値は配列のアドレス−１が返ります。）
 
-double *free_d1vec(double *vec);
-//メモリを開放します。vec にはNULLが入ります。
+void free_d1vec(double *vec);
+// メモリを開放します。vec にはNULLが入ります。
     
 double **d1matrix(int row,int col);　
-//row*col行列の領域を確保します。添字は行列それぞれ１からです。
+// row*col行列の領域を確保します。添字は行列それぞれ１からです。
     
-double *free_d1mat(double **mat);　
+void free_d1mat(double **mat);　
 // メモリを開放します。mat にはNULLが入ります。
     
 double *addrow(double *vec, int n);　
-//double型ベクトルvecを添字が大きい方向にn増やします。元のvecは開放されます。
+// double型ベクトルvecを添字が大きい方向にn増やします。元のvecは開放されます。
 ```
 
 ### 最後に
